@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "acl-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4173", "--directory", "/Users/ziadramadan/Documents/Documents - Ziad’s MacBook Air/acl-berkeley-website"],
+      "port": 4173
+    }
+  ]
+}
