@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HALO: Hazard-Aware Landing Optimization — Autonomous Controls Laboratory, UC Berkeley</title>
+  <title>HALO: Hazard-Aware Landing Optimization, Autonomous Controls Laboratory, UC Berkeley</title>
   <meta name="description" content="HALO couples landing-site selection with trajectory optimization so a vehicle can land safely on hazardous terrain.">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" href="../assets/favicon.png">
@@ -38,7 +38,7 @@
     <div class="page-hero">
       <div class="container">
         <h1>HALO: Hazard-Aware Landing Optimization</h1>
-        <p>Choosing where to land — and how to get there — at the same time.</p>
+        <p>Choosing the landing site and the trajectory in one planning problem.</p>
       </div>
     </div>
 
@@ -46,13 +46,22 @@
       <div class="container">
         <h2 id="overview-heading">Overview</h2>
         <p>
-          Landing on rough terrain — a boulder field on the Moon, a crater rim on Mars — requires answering two questions at once: <em>where</em> is it safe to land, and <em>can we actually fly there</em> from the current state? Most systems answer these separately, which can select a landing site the vehicle cannot reach.
+          Landing on rough terrain requires two coupled decisions. The vehicle
+          must identify a safe site and determine whether it can reach that site
+          from its current state. Boulder fields on the Moon and crater rims on
+          Mars are typical cases. Systems that separate site selection from
+          trajectory planning can choose a landing site the vehicle cannot reach.
         </p>
         <p>
-          HALO (Hazard-Aware Landing Optimization) couples the two decisions. It evaluates candidate landing sites using terrain data from onboard perception while simultaneously checking the feasibility and cost of the divert trajectory to each one, producing a safe site <em>and</em> the fuel-efficient trajectory to reach it.
+          HALO (Hazard-Aware Landing Optimization) treats site selection and
+          divert guidance as one problem. It evaluates candidate sites with
+          terrain data from onboard perception. At the same time, it checks the
+          feasibility and fuel cost of the trajectory to each site. The output is
+          a safe landing site and the trajectory needed to reach it.
         </p>
         <p>
-          This line of work supports precision landing for lunar and planetary missions, where late hazard detection leaves little time and fuel to react.
+          This work supports precision landing for lunar and planetary missions,
+          where late hazard detection leaves little time and fuel to react.
         </p>
       </div>
     </section>
@@ -68,11 +77,11 @@
         </p>
         <div class="figure-row">
           <figure class="result">
-            <div class="figure-placeholder">Figure placeholder — add a result plot or render here</div>
+            <div class="figure-placeholder">Figure placeholder. Add a result plot or render here</div>
             <figcaption>Caption explaining the result in plain language, with a pointer to the paper.</figcaption>
           </figure>
           <figure class="result">
-            <div class="figure-placeholder">Video placeholder — add a simulation or flight clip here</div>
+            <div class="figure-placeholder">Video placeholder. Add a simulation or flight clip here</div>
             <figcaption>Caption describing what the clip shows.</figcaption>
           </figure>
         </div>
@@ -86,7 +95,7 @@
           <li><a href="https://arxiv.org/search/?searchtype=all&amp;query=HALO+Hazard+Aware+Landing+Optimization" rel="noopener">Find the HALO papers on arXiv</a></li>
           <li><a href="https://github.com/UW-ACL" rel="noopener">Lab GitHub organization</a></li>
         </ul>
-        <p style="margin-top: 2rem;"><a href="../research.html">← Back to Research</a></p>
+        <p class="section-link"><a href="../research.html">Back to Research</a></p>
       </div>
     </section>
   </main>

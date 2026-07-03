@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QOCO: Quadratic Objective Conic Optimizer — Autonomous Controls Laboratory, UC Berkeley</title>
+  <title>QOCO: Quadratic Objective Conic Optimizer, Autonomous Controls Laboratory, UC Berkeley</title>
   <meta name="description" content="QOCO is an open-source quadratic-objective conic optimizer developed in the lab for real-time, embedded trajectory optimization.">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" href="../assets/favicon.png">
@@ -46,10 +46,16 @@
       <div class="container">
         <h2 id="overview-heading">Overview</h2>
         <p>
-          Trajectory optimization onboard a vehicle needs a solver that is fast, has predictable runtime, and runs on flight-grade processors with limited memory. General-purpose solvers are rarely designed under those constraints.
+          Onboard trajectory optimization needs predictable runtime and modest
+          memory use on flight-grade processors. General-purpose solvers are
+          rarely designed for those constraints.
         </p>
         <p>
-          QOCO is the lab's open-source solver for second-order cone programs with quadratic objectives — the problem class at the heart of most of our trajectory optimization formulations. It is written in C with no external dependencies, making it straightforward to embed, certify, and run in real time.
+          QOCO is the lab's open-source solver for second-order cone programs with
+          quadratic objectives. That problem class appears in many of the lab's
+          trajectory optimization formulations. QOCO is written in C and has no
+          external dependencies, which makes it easier to embed, certify, and run
+          in real time.
         </p>
         <p>
           QOCO is freely available and used in the lab's own flight and simulation pipelines.
@@ -68,11 +74,11 @@
         </p>
         <div class="figure-row">
           <figure class="result">
-            <div class="figure-placeholder">Figure placeholder — add a result plot or render here</div>
+            <div class="figure-placeholder">Figure placeholder. Add a result plot or render here</div>
             <figcaption>Caption explaining the result in plain language, with a pointer to the paper.</figcaption>
           </figure>
           <figure class="result">
-            <div class="figure-placeholder">Video placeholder — add a simulation or flight clip here</div>
+            <div class="figure-placeholder">Video placeholder. Add a simulation or flight clip here</div>
             <figcaption>Caption describing what the clip shows.</figcaption>
           </figure>
         </div>
@@ -86,7 +92,7 @@
           <li><a href="https://github.com/qoco-org/qoco" rel="noopener">QOCO source code on GitHub</a></li>
           <li><a href="https://arxiv.org/search/?searchtype=all&amp;query=QOCO+quadratic+objective+conic+optimizer" rel="noopener">Find the QOCO paper on arXiv</a></li>
         </ul>
-        <p style="margin-top: 2rem;"><a href="../research.html">← Back to Research</a></p>
+        <p class="section-link"><a href="../research.html">Back to Research</a></p>
       </div>
     </section>
   </main>

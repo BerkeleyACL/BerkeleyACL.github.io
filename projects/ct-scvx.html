@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Continuous-Time Successive Convexification — Autonomous Controls Laboratory, UC Berkeley</title>
+  <title>Continuous-Time Successive Convexification, Autonomous Controls Laboratory, UC Berkeley</title>
   <meta name="description" content="Successive convexification with continuous-time constraint satisfaction eliminates inter-sample constraint violations in trajectory optimization.">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" href="../assets/favicon.png">
@@ -46,10 +46,17 @@
       <div class="container">
         <h2 id="overview-heading">Overview</h2>
         <p>
-          Numerical trajectory optimization works on a discrete grid of time points — but a real vehicle flies through all the instants in between. A trajectory that satisfies constraints at every grid point can still violate them between samples: clipping a glideslope, exceeding a speed limit, or grazing an obstacle mid-segment.
+          Numerical trajectory optimization uses a discrete grid of time points.
+          A flight vehicle moves between those points. A trajectory can satisfy
+          constraints at the grid nodes and still violate them between samples,
+          for example by clipping a glideslope, exceeding a speed limit, or
+          grazing an obstacle mid-segment.
         </p>
         <p>
-          This project extends successive convexification (SCvx) — the lab's framework for solving nonconvex optimal control by solving a sequence of convex problems — so that constraints are guaranteed in <em>continuous time</em>, not just at the discretization nodes.
+          This project extends successive convexification (SCvx), the lab's
+          framework for solving nonconvex optimal control through a sequence of
+          convex problems. The extension guarantees constraints in continuous time,
+          not only at discretization nodes.
         </p>
         <p>
           The result, including the award-winning AutoSCvx line of work, is trajectory optimization that is both computationally tractable and safe at every instant of flight.
@@ -68,11 +75,11 @@
         </p>
         <div class="figure-row">
           <figure class="result">
-            <div class="figure-placeholder">Figure placeholder — add a result plot or render here</div>
+            <div class="figure-placeholder">Figure placeholder. Add a result plot or render here</div>
             <figcaption>Caption explaining the result in plain language, with a pointer to the paper.</figcaption>
           </figure>
           <figure class="result">
-            <div class="figure-placeholder">Video placeholder — add a simulation or flight clip here</div>
+            <div class="figure-placeholder">Video placeholder. Add a simulation or flight clip here</div>
             <figcaption>Caption describing what the clip shows.</figcaption>
           </figure>
         </div>
@@ -86,7 +93,7 @@
           <li><a href="https://arxiv.org/search/?searchtype=all&amp;query=successive+convexification+continuous+time+constraint+satisfaction" rel="noopener">Find the papers on arXiv</a></li>
           <li><a href="https://github.com/UW-ACL" rel="noopener">Lab GitHub organization</a></li>
         </ul>
-        <p style="margin-top: 2rem;"><a href="../research.html">← Back to Research</a></p>
+        <p class="section-link"><a href="../research.html">Back to Research</a></p>
       </div>
     </section>
   </main>

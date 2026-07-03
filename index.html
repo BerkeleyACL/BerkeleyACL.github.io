@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Autonomous Controls Laboratory — UC Berkeley</title>
-  <meta name="description" content="The Autonomous Controls Laboratory at UC Berkeley, led by Prof. Behçet Açıkmeşe, develops convex-optimization-based methods for trajectory planning, robust control, and autonomous decision-making.">
+  <title>Autonomous Controls Laboratory, UC Berkeley</title>
+  <meta name="description" content="The Autonomous Controls Laboratory at UC Berkeley develops convex-optimization-based methods for trajectory planning, robust control, and autonomous decision-making. Prof. Behçet Açıkmeşe leads the lab.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
@@ -38,13 +38,11 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <p class="badge">Now at UC Berkeley</p>
           <h1>Optimization-based autonomy for aerospace systems</h1>
           <p class="lede">
-            We develop methodologies and algorithms based on convex optimization for
-            trajectory planning, robust control, and optimal recursive decision-making
-            across autonomous dynamical systems — from planetary landers to
-            spacecraft swarms.
+            We develop convex-optimization methods for trajectory planning,
+            robust control, and optimal recursive decision-making. The applications
+            span planetary landers and spacecraft swarms.
           </p>
           <a class="btn btn-gold" href="research.html">Explore our research</a>
           <a class="btn btn-outline" href="contact.html">Join the lab</a>
@@ -64,20 +62,18 @@
       <div class="container">
         <h2 id="about-heading">About the lab</h2>
         <p class="section-intro">
-          The Autonomous Controls Laboratory (ACL), led by
-          <a href="people.html">Prof. Behçet Açıkmeşe</a>, has relocated to the
-          University of California, Berkeley after a decade at the University of
-          Washington. Our work bridges control theory, optimization, and aerospace
-          engineering: we design algorithms with provable guarantees that run in
-          real time on flight hardware.
+          The Autonomous Controls Laboratory (ACL) has moved to UC Berkeley after
+          a decade at the University of Washington.
+          <a href="people.html">Prof. Behçet Açıkmeşe</a> leads the group. The lab
+          connects control theory and optimization with aerospace engineering.
+          Its flight-hardware algorithms are designed for real-time execution and
+          include provable guarantees.
         </p>
         <p>
-          A hallmark of the lab is taking theory all the way to practice. Methods
-          developed by the group — including lossless convexification and
-          successive convexification for onboard trajectory optimization — have
-          informed planetary landing guidance and reusable rocket flight, and our
-          open-source solvers and tools are used by researchers and practitioners
-          worldwide.
+          The lab has a theory-to-flight orientation. Lossless convexification and
+          successive convexification, both developed in this research program,
+          have informed planetary landing guidance and reusable rocket flight.
+          The group also maintains open-source solvers and tools used outside the lab.
         </p>
       </div>
     </section>
@@ -89,41 +85,56 @@
           Five threads run through the lab's work. Each combines rigorous theory
           with algorithms designed for real-time, onboard implementation.
         </p>
-        <div class="card-grid">
-          <div class="card">
+        <div class="research-index" aria-label="Research themes">
+          <article class="theme-item">
+            <span class="theme-number" aria-hidden="true">01</span>
+            <div>
             <h3>Trajectory Optimization</h3>
-            <p>Real-time, onboard trajectory generation for landing, rendezvous,
-               and proximity operations with hard state and control constraints.</p>
-          </div>
-          <div class="card">
+            <p>Onboard trajectory generation in real time for landing, rendezvous,
+               and proximity operations under hard state and control constraints.</p>
+            </div>
+          </article>
+          <article class="theme-item">
+            <span class="theme-number" aria-hidden="true">02</span>
+            <div>
             <h3>First-Order Optimization Algorithms</h3>
-            <p>Custom solvers — such as QOCO, our quadratic-objective conic
-               optimizer — built for speed, reliability, and embedded deployment.</p>
-          </div>
-          <div class="card">
+            <p>Custom solvers, including the QOCO quadratic-objective conic
+               optimizer, are built for reliable embedded deployment.</p>
+            </div>
+          </article>
+          <article class="theme-item">
+            <span class="theme-number" aria-hidden="true">03</span>
+            <div>
             <h3>Robust Control</h3>
             <p>Feedback synthesis that guarantees performance and constraint
                satisfaction despite uncertainty, disturbances, and model error.</p>
-          </div>
-          <div class="card">
+            </div>
+          </article>
+          <article class="theme-item">
+            <span class="theme-number" aria-hidden="true">04</span>
+            <div>
             <h3>Optimal Recursive Decision-Making</h3>
             <p>Sequential decision-making under uncertainty, with convex
                formulations that make optimal policies computationally tractable.</p>
-          </div>
-          <div class="card">
+            </div>
+          </article>
+          <article class="theme-item">
+            <span class="theme-number" aria-hidden="true">05</span>
+            <div>
             <h3>Markov Decision Processes</h3>
             <p>Density control and policy synthesis for large-scale stochastic
                systems, including swarm guidance and probabilistic safety.</p>
-          </div>
+            </div>
+          </article>
         </div>
-        <p style="margin-top: 2rem;"><a href="research.html">Read more about our research →</a></p>
+        <p class="section-link"><a href="research.html">Read more about our research</a></p>
       </div>
     </section>
 
     <section class="section" aria-labelledby="news-heading">
       <div class="container">
         <h2 id="news-heading">Recent news</h2>
-        <ul class="news-list">
+        <ul class="news-list news-list-home">
           <li>
             <time datetime="2026-01">Jan 2026</time>
             <span>Skye received the 2025 AIAA Atmospheric Flight Mechanics Best Paper Award for AutoSCvx.</span>
@@ -141,7 +152,7 @@
             <span>Abhi successfully defended his dissertation.</span>
           </li>
         </ul>
-        <p style="margin-top: 1.5rem;"><a href="news.html">All news →</a></p>
+        <p class="section-link"><a href="news.html">All news</a></p>
       </div>
     </section>
   </main>
