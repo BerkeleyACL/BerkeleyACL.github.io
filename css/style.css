@@ -713,17 +713,22 @@ figure.result figcaption {
   margin-top: 0;
 }
 
-.profile-hero {
+.profile-hero-grid {
   display: grid;
-  grid-template-columns: 10rem minmax(0, 1fr);
+  grid-template-columns: 10rem minmax(18rem, 30rem);
   gap: 1.75rem;
   align-items: center;
+  justify-content: center;
 }
 
 .profile-hero-media {
   width: 10rem;
   aspect-ratio: 1;
   border-radius: 0.8rem;
+}
+
+.profile-hero h1 {
+  line-height: 1.08;
 }
 
 .profile-layout {
@@ -831,8 +836,10 @@ figure.result figcaption {
 @media (max-width: 36rem) {
   .profile-card,
   .pi-card,
-  .profile-hero {
+  .profile-hero-grid {
     grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
   }
 
   .profile-card-media,

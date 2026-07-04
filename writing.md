@@ -36,7 +36,7 @@ Header navigation:
 Footer:
 
 - Autonomous Controls Laboratory
-- Department of Mechanical Engineering
+- Dept. of ECE
 - University of California, Berkeley
 - Berkeley, CA 94720
 - Research
@@ -138,7 +138,7 @@ Metadata:
 Principal Investigator:
 
 - Prof. Beh&ccedil;et A&ccedil;&#305;kme&#351;e
-- Professor, Department of Mechanical Engineering, University of California, Berkeley
+- Professor, Dept. of ECE, University of California, Berkeley
 - Beh&ccedil;et A&ccedil;&#305;kme&#351;e leads the lab's work on convex optimization for autonomous control, trajectory optimization, robust control, and aerospace systems.
 
 Current members:
@@ -322,7 +322,7 @@ Main copy:
 
 - Join and Contact
 - The lab recruits students who want to connect control theory, optimization, and aerospace systems.
-- The lab welcomes PhD applicants prepared in control theory; optimization; applied mathematics; or aerospace engineering. Admission runs through UC Berkeley's graduate programs. Applicants should apply to the Department of Mechanical Engineering PhD program and name Prof. A&ccedil;&#305;kme&#351;e as a potential advisor in the statement of purpose. Competitive applicants usually have exposure to convex optimization and dynamics and control. Scientific programming experience in Python, C/C++, or Julia is also expected.
+- The lab welcomes PhD applicants prepared in control theory; optimization; applied mathematics; or aerospace engineering. Admission runs through UC Berkeley's graduate programs. Applicants should apply to the ECE PhD program and name Prof. A&ccedil;&#305;kme&#351;e as a potential advisor in the statement of purpose. Competitive applicants usually have exposure to convex optimization and dynamics and control. Scientific programming experience in Python, C/C++, or Julia is also expected.
 
 ## Publication Sync Note
 
