@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software, Autonomous Controls Laboratory, UC Berkeley</title>
+  <meta name="description" content="Open-source solvers, interfaces, and research code from the Autonomous Controls Laboratory at UC Berkeley.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/acl_mark_light.png" alt="">
+        <span class="brand-text">
+          <span class="brand-name">Autonomous Controls Laboratory</span>
+          <span class="brand-sub">University of California, Berkeley</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="true" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="software.html" aria-current="page">Software</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Join &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-hero">
+      <div class="container">
+        <h1>Software</h1>
+        <p>Open-source solvers, interfaces, demos, and research code maintained by the lab.</p>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="software-heading">
+      <div class="container">
+        <h2 id="software-heading">Open-source code</h2>
+        <p class="section-intro">The lab publishes software for sequential convex programming, conic optimization, trajectory planning, and temporal-logic specifications. This page links to the public repositories and the relevant project pages where available.</p>
+        <section class="software-section" aria-labelledby="solvers-and-toolboxes-heading">
+          <h3 id="solvers-and-toolboxes-heading">Solvers and toolboxes</h3>
+          <div class="software-list">
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/SCPToolbox.jl" rel="noopener">SCPToolbox.jl</a></h4>
+                <p>Sequential Convex Programming Toolbox for nonconvex trajectory optimization.</p>
+              </div>
+              <div class="software-meta">
+                <span>Julia</span>
+
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/qoco-org/qoco" rel="noopener">qoco</a></h4>
+                <p>Quadratic Objective Conic Optimizer for real-time conic optimization.</p>
+              </div>
+              <div class="software-meta">
+                <span>C</span>
+                <a href="https://qoco-org.github.io/qoco/" rel="noopener">Docs</a>
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/qoco-org/qocogen" rel="noopener">qocogen</a></h4>
+                <p>Custom solver generator for quadratic-objective second-order cone programs.</p>
+              </div>
+              <div class="software-meta">
+                <span>Python</span>
+
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="software-section" aria-labelledby="interfaces-heading">
+          <h3 id="interfaces-heading">Interfaces</h3>
+          <div class="software-list">
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/qoco-org/qoco-python" rel="noopener">qoco-python</a></h4>
+                <p>Python interface for the QOCO solver.</p>
+              </div>
+              <div class="software-meta">
+                <span>Python</span>
+
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/qoco-org/QOCO.jl" rel="noopener">QOCO.jl</a></h4>
+                <p>Julia MathOptInterface wrapper for QOCO.</p>
+              </div>
+              <div class="software-meta">
+                <span>Julia</span>
+
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/qoco-org/qoco-matlab" rel="noopener">qoco-matlab</a></h4>
+                <p>MATLAB interface for the QOCO solver.</p>
+              </div>
+              <div class="software-meta">
+                <span>MATLAB</span>
+
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="software-section" aria-labelledby="trajectory-optimization-projects-heading">
+          <h3 id="trajectory-optimization-projects-heading">Trajectory optimization projects</h3>
+          <div class="software-list">
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/ct-scvx" rel="noopener">ct-scvx</a></h4>
+                <p>Successive convexification with continuous-time constraint satisfaction.</p>
+              </div>
+              <div class="software-meta">
+                <span>Research code</span>
+                <a href="projects/ct-scvx.html">Related project</a>
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/nmpc-ctcs" rel="noopener">nmpc-ctcs</a></h4>
+                <p>Nonlinear model predictive control with continuous-time constraint satisfaction.</p>
+              </div>
+              <div class="software-meta">
+                <span>Research code</span>
+
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/HALO" rel="noopener">HALO</a></h4>
+                <p>Hazard-aware landing optimization for perception-coupled landing guidance.</p>
+              </div>
+              <div class="software-meta">
+                <span>Python</span>
+                <a href="projects/halo.html">Related project</a>
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/DT-LCvx-Pointing" rel="noopener">DT-LCvx-Pointing</a></h4>
+                <p>Discrete-time lossless convexification for pointing constraints.</p>
+              </div>
+              <div class="software-meta">
+                <span>Notebook</span>
+                <a href="projects/dlcvx.html">Related project</a>
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/CT-cSTC" rel="noopener">CT-cSTC</a></h4>
+                <p>Sequential convex programming for powered descent guidance with compound state-triggered constraints.</p>
+              </div>
+              <div class="software-meta">
+                <span>Research code</span>
+
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="software-section" aria-labelledby="temporal-logic-and-decision-tools-heading">
+          <h3 id="temporal-logic-and-decision-tools-heading">Temporal logic and decision tools</h3>
+          <div class="software-list">
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/D-GMSR" rel="noopener">D-GMSR</a></h4>
+                <p>Optimization with temporal and logical specifications via generalized mean-based smooth robustness measures.</p>
+              </div>
+              <div class="software-meta">
+                <span>Research code</span>
+                <a href="projects/specifications.html">Related project</a>
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/TrajOpt_CT-STL" rel="noopener">TrajOpt_CT-STL</a></h4>
+                <p>Trajectory optimization with continuous-time satisfaction of signal temporal logic specifications.</p>
+              </div>
+              <div class="software-meta">
+                <span>Research code</span>
+
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="software-section" aria-labelledby="demos-and-legacy-tools-heading">
+          <h3 id="demos-and-legacy-tools-heading">Demos and legacy tools</h3>
+          <div class="software-list">
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/pipg-demo" rel="noopener">pipg-demo</a></h4>
+                <p>Demonstration of the PIPG algorithm for trajectory optimization.</p>
+              </div>
+              <div class="software-meta">
+                <span>Notebook</span>
+
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/NEWTON-PIPG" rel="noopener">NEWTON-PIPG</a></h4>
+                <p>Code base for Newton-PIPG.</p>
+              </div>
+              <div class="software-meta">
+                <span>C++</span>
+
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/optimal-preconditioning" rel="noopener">optimal-preconditioning</a></h4>
+                <p>Optimal preconditioning for online quadratic cone programming.</p>
+              </div>
+              <div class="software-meta">
+                <span>C</span>
+
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/prox-convex" rel="noopener">prox-convex</a></h4>
+                <p>A proximal method for composite optimization with smooth and convex components.</p>
+              </div>
+              <div class="software-meta">
+                <span>Research code</span>
+
+              </div>
+            </article>
+            <article class="software-item">
+              <div>
+                <h4><a href="https://github.com/UW-ACL/optgui" rel="noopener">optgui</a></h4>
+                <p>Graphical interface for trajectory generation with successive convexification.</p>
+              </div>
+              <div class="software-meta">
+                <span>C++</span>
+
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Autonomous Controls Laboratory</h2>
+          <p>Department of Mechanical Engineering<br>
+             University of California, Berkeley<br>
+             Berkeley, CA 94720</p>
+        </div>
+        <div>
+          <h2>Site</h2>
+          <ul>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="contact.html">Join &amp; Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Elsewhere</h2>
+          <ul>
+            <li><a href="https://scholar.google.com/citations?user=YEdJKr8AAAAJ&amp;hl=en" rel="noopener">Google Scholar</a></li>
+            <li><a href="https://github.com/UW-ACL" rel="noopener">GitHub</a></li>
+            <li><a href="https://uwacl.com/" rel="noopener">Former site (UW)</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2026 Autonomous Controls Laboratory, UC Berkeley.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
