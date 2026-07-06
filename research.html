@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research — Autonomous Controls Laboratory, UC Berkeley</title>
-  <meta name="description" content="Research at the Autonomous Controls Laboratory: trajectory optimization, first-order optimization algorithms, robust control, optimal recursive decision-making, and Markov decision processes.">
+  <title>Research, Autonomous Controls Laboratory, UC Berkeley</title>
+  <meta name="description" content="Research at the Autonomous Controls Laboratory covers trajectory optimization; first-order optimization algorithms; robust control; optimal recursive decision-making; and Markov decision processes.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
@@ -26,6 +26,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="research.html" aria-current="page">Research</a></li>
           <li><a href="people.html">People</a></li>
+          <li><a href="software.html">Software</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="news.html">News</a></li>
           <li><a href="contact.html">Join &amp; Contact</a></li>
@@ -46,49 +47,75 @@
       <div class="container">
         <h2 id="areas-heading">Research areas</h2>
 
-        <h3>Trajectory Optimization</h3>
-        <p>
-          We study how to compute optimal trajectories onboard, in real time, for
-          systems with nonconvex dynamics and constraints. Our work on
-          <strong>lossless convexification</strong> showed that important classes of
-          nonconvex optimal control problems — such as fuel-optimal planetary
-          landing with minimum-thrust and pointing constraints — can be solved
-          exactly via convex relaxations. <strong>Successive convexification
-          (SCvx)</strong> extends these ideas to general nonlinear dynamics, with
-          recent results guaranteeing continuous-time constraint satisfaction.
-        </p>
+        <div class="research-map" aria-label="Research area map">
+          <article class="research-area">
+            <span class="research-number" aria-hidden="true">01</span>
+            <div>
+              <h3>Trajectory Optimization</h3>
+              <p>
+                We study onboard computation of optimal trajectories for systems with
+                nonconvex dynamics and constraints. Lossless convexification shows that
+                selected nonconvex optimal control problems can be solved exactly through
+                convex relaxations. Examples include fuel-optimal planetary landing with
+                minimum-thrust and pointing constraints. Successive convexification
+                (SCvx) extends the approach to nonlinear dynamics, including recent
+                guarantees for continuous-time constraint satisfaction.
+              </p>
+            </div>
+          </article>
 
-        <h3>First-Order Optimization Algorithms</h3>
-        <p>
-          Flight-grade autonomy needs solvers that are fast, predictable, and
-          verifiable. We design custom first-order methods and conic solvers for
-          embedded platforms, including <a href="https://github.com/qoco-org/qoco" rel="noopener">QOCO</a>,
-          an open-source quadratic-objective conic optimizer developed in the lab.
-        </p>
+          <article class="research-area">
+            <span class="research-number" aria-hidden="true">02</span>
+            <div>
+              <h3>First-Order Optimization Algorithms</h3>
+              <p>
+                Flight-grade autonomy needs solvers with predictable runtime and limited
+                memory use. The lab designs first-order methods and conic solvers for
+                embedded platforms. <a href="https://github.com/qoco-org/qoco" rel="noopener">QOCO</a>,
+                an open-source quadratic-objective conic optimizer, is one example.
+              </p>
+            </div>
+          </article>
 
-        <h3>Robust Control</h3>
-        <p>
-          Real systems face disturbances, model uncertainty, and actuation limits.
-          We develop robust feedback synthesis methods — including robust
-          fuel-optimal trajectory planning with feedback control — that maintain
-          performance and constraint satisfaction under uncertainty.
-        </p>
+          <article class="research-area">
+            <span class="research-number" aria-hidden="true">03</span>
+            <div>
+              <h3>Robust Control</h3>
+              <p>
+                Real systems face disturbances, model uncertainty, and actuation limits.
+                The lab develops feedback synthesis methods that preserve constraint
+                satisfaction under uncertainty. One example is robust fuel-optimal
+                trajectory planning with feedback control.
+              </p>
+            </div>
+          </article>
 
-        <h3>Optimal Recursive Decision-Making</h3>
-        <p>
-          Many autonomy problems are sequential: decisions now shape what is
-          feasible later. We formulate recursive decision-making problems with
-          temporal and logical specifications, and develop convex formulations
-          that make optimal policies tractable to compute.
-        </p>
+          <article class="research-area">
+            <span class="research-number" aria-hidden="true">04</span>
+            <div>
+              <h3>Optimal Recursive Decision-Making</h3>
+              <p>
+                Many autonomy problems are sequential. Current decisions change what
+                will be feasible later. The lab formulates recursive decision-making
+                problems with temporal and logical specifications, then studies convex
+                formulations that make optimal policies computationally tractable.
+              </p>
+            </div>
+          </article>
 
-        <h3>Markov Decision Processes</h3>
-        <p>
-          For large-scale stochastic systems — such as swarms of spacecraft or
-          vehicles — we study density control and policy synthesis on Markov
-          decision processes, enabling probabilistic guidance of many agents with
-          safety and convergence guarantees.
-        </p>
+          <article class="research-area">
+            <span class="research-number" aria-hidden="true">05</span>
+            <div>
+              <h3>Markov Decision Processes</h3>
+              <p>
+                For large-scale stochastic systems, the lab studies density control and
+                policy synthesis on Markov decision processes. Spacecraft and vehicle
+                swarms are the motivating cases. The goal is probabilistic guidance with
+                safety and convergence guarantees.
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -96,49 +123,66 @@
       <div class="container">
         <h2 id="projects-heading">Selected projects</h2>
         <p class="section-intro">Click any project to see details, results, and media.</p>
-        <div class="card-grid">
-          <div class="card">
-            <h3><a class="card-link" href="projects/halo.html">HALO: Hazard-Aware Landing Optimization</a></h3>
+        <div class="project-directory">
+          <article class="project-entry">
+            <span class="project-number" aria-hidden="true">01</span>
+            <div>
+            <h3><a class="project-link" href="projects/halo.html">HALO: Hazard-Aware Landing Optimization</a></h3>
             <p>Coupled perception and trajectory optimization for safe landing
                site selection and divert guidance on hazardous terrain.</p>
-            <span class="card-more" aria-hidden="true">Learn more →</span>
-          </div>
-          <div class="card">
-            <h3><a class="card-link" href="projects/qoco.html">QOCO Solver</a></h3>
+            </div>
+            <span class="project-more" aria-hidden="true">Learn more</span>
+          </article>
+          <article class="project-entry">
+            <span class="project-number" aria-hidden="true">02</span>
+            <div>
+            <h3><a class="project-link" href="projects/qoco.html">QOCO Solver</a></h3>
             <p>An open-source quadratic-objective conic optimizer designed for
                real-time, embedded trajectory optimization workloads.</p>
-            <span class="card-more" aria-hidden="true">Learn more →</span>
-          </div>
-          <div class="card">
-            <h3><a class="card-link" href="projects/ct-scvx.html">Continuous-Time SCvx</a></h3>
+            </div>
+            <span class="project-more" aria-hidden="true">Learn more</span>
+          </article>
+          <article class="project-entry">
+            <span class="project-number" aria-hidden="true">03</span>
+            <div>
+            <h3><a class="project-link" href="projects/ct-scvx.html">Continuous-Time SCvx</a></h3>
             <p>Successive convexification with continuous-time constraint
-               satisfaction — eliminating inter-sample constraint violations.</p>
-            <span class="card-more" aria-hidden="true">Learn more →</span>
-          </div>
-          <div class="card">
-            <h3><a class="card-link" href="projects/cislunar.html">Cislunar Relative Motion</a></h3>
+               satisfaction and elimination of inter-sample constraint violations.</p>
+            </div>
+            <span class="project-more" aria-hidden="true">Learn more</span>
+          </article>
+          <article class="project-entry">
+            <span class="project-number" aria-hidden="true">04</span>
+            <div>
+            <h3><a class="project-link" href="projects/cislunar.html">Cislunar Relative Motion</a></h3>
             <p>Impulsive relative motion control for rendezvous and proximity
                operations in cislunar space missions.</p>
-            <span class="card-more" aria-hidden="true">Learn more →</span>
-          </div>
-          <div class="card">
-            <h3><a class="card-link" href="projects/dlcvx.html">Discrete Lossless Convexification</a></h3>
+            </div>
+            <span class="project-more" aria-hidden="true">Learn more</span>
+          </article>
+          <article class="project-entry">
+            <span class="project-number" aria-hidden="true">05</span>
+            <div>
+            <h3><a class="project-link" href="projects/dlcvx.html">Discrete Lossless Convexification</a></h3>
             <p>Extending lossless convexification to discrete-time problems with
                pointing constraints.</p>
-            <span class="card-more" aria-hidden="true">Learn more →</span>
-          </div>
-          <div class="card">
-            <h3><a class="card-link" href="projects/specifications.html">Temporal &amp; Logical Specifications</a></h3>
+            </div>
+            <span class="project-more" aria-hidden="true">Learn more</span>
+          </article>
+          <article class="project-entry">
+            <span class="project-number" aria-hidden="true">06</span>
+            <div>
+            <h3><a class="project-link" href="projects/specifications.html">Temporal &amp; Logical Specifications</a></h3>
             <p>Optimization-based planning under rich mission specifications
                expressed in temporal and propositional logic.</p>
-            <span class="card-more" aria-hidden="true">Learn more →</span>
-          </div>
+            </div>
+            <span class="project-more" aria-hidden="true">Learn more</span>
+          </article>
         </div>
-        <p style="margin-top: 2rem;">
+        <p class="section-note">
           See <a href="publications.html">Publications</a> for papers associated
-          with each project, and our
-          <a href="https://github.com/UW-ACL" rel="noopener">GitHub organization</a>
-          for open-source code.
+          with each project, and <a href="software.html">Software</a> for
+          open-source code.
         </p>
       </div>
     </section>
@@ -149,7 +193,7 @@
       <div class="footer-grid">
         <div>
           <h2>Autonomous Controls Laboratory</h2>
-          <p>Department of Mechanical Engineering<br>
+          <p>Dept. of ECE<br>
              University of California, Berkeley<br>
              Berkeley, CA 94720</p>
         </div>
@@ -158,6 +202,7 @@
           <ul>
             <li><a href="research.html">Research</a></li>
             <li><a href="people.html">People</a></li>
+            <li><a href="software.html">Software</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="contact.html">Join &amp; Contact</a></li>
           </ul>
@@ -171,7 +216,7 @@
           </ul>
         </div>
       </div>
-      <p class="footer-bottom">© 2026 Autonomous Controls Laboratory, UC Berkeley.</p>
+      <p class="footer-bottom">&copy; 2026 Autonomous Controls Laboratory, UC Berkeley.</p>
     </div>
   </footer>
 

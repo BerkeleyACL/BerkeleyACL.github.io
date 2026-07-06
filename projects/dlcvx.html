@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Discrete Lossless Convexification — Autonomous Controls Laboratory, UC Berkeley</title>
+  <title>Discrete Lossless Convexification, Autonomous Controls Laboratory, UC Berkeley</title>
   <meta name="description" content="Extending lossless convexification to discrete-time optimal control problems with pointing constraints.">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" href="../assets/favicon.png">
@@ -26,6 +26,7 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="../research.html" aria-current="page">Research</a></li>
           <li><a href="../people.html">People</a></li>
+          <li><a href="../software.html">Software</a></li>
           <li><a href="../publications.html">Publications</a></li>
           <li><a href="../news.html">News</a></li>
           <li><a href="../contact.html">Join &amp; Contact</a></li>
@@ -46,13 +47,21 @@
       <div class="container">
         <h2 id="overview-heading">Overview</h2>
         <p>
-          Lossless convexification is one of the lab's signature results: certain nonconvex optimal control problems — like fuel-optimal rocket landing with a minimum-thrust constraint — can be relaxed into convex problems whose solutions are provably optimal for the original problem. This is what makes solving them onboard, in real time, possible.
+          Lossless convexification is one of the lab's central results. Certain
+          nonconvex optimal control problems can be relaxed into convex problems
+          whose solutions remain optimal for the original problem. Fuel-optimal
+          rocket landing with a minimum-thrust constraint is one example. This is
+          what makes onboard real-time solution possible.
         </p>
         <p>
-          The classical theory is set in continuous time, but flight software works in discrete time. This project extends lossless convexification to discrete-time problems, including thrust pointing constraints, closing the gap between the theory and the form in which it is actually implemented.
+          The classical theory is set in continuous time. Flight software works in
+          discrete time. This project extends lossless convexification to
+          discrete-time problems with thrust pointing constraints, bringing the
+          theory closer to implementation.
         </p>
         <p>
-          The outcome is real-time-capable guidance with optimality guarantees that hold for the discretized problem the flight computer actually solves.
+          The result is real-time-capable guidance with optimality guarantees that
+          hold for the discretized problem the flight computer actually solves.
         </p>
       </div>
     </section>
@@ -62,17 +71,14 @@
         <h2 id="results-heading">Results &amp; media</h2>
         <p class="section-intro">
           Figures and videos for this project will appear here.
-          <!-- TODO: replace the placeholders below with real figures/videos.
-               For an image:  <img src="../assets/projects/dlcvx-fig1.png" alt="...">
-               For a video:   <video controls src="../assets/projects/dlcvx-demo.mp4"></video> -->
         </p>
         <div class="figure-row">
           <figure class="result">
-            <div class="figure-placeholder">Figure placeholder — add a result plot or render here</div>
+            <div class="figure-placeholder">Figure placeholder. Add a result plot or render here</div>
             <figcaption>Caption explaining the result in plain language, with a pointer to the paper.</figcaption>
           </figure>
           <figure class="result">
-            <div class="figure-placeholder">Video placeholder — add a simulation or flight clip here</div>
+            <div class="figure-placeholder">Video placeholder. Add a simulation or flight clip here</div>
             <figcaption>Caption describing what the clip shows.</figcaption>
           </figure>
         </div>
@@ -86,7 +92,7 @@
           <li><a href="https://arxiv.org/search/?searchtype=all&amp;query=discrete+lossless+convexification+pointing+constraints" rel="noopener">Find the papers on arXiv</a></li>
           <li><a href="https://github.com/UW-ACL" rel="noopener">Lab GitHub organization</a></li>
         </ul>
-        <p style="margin-top: 2rem;"><a href="../research.html">← Back to Research</a></p>
+        <p class="section-link"><a href="../research.html">Back to Research</a></p>
       </div>
     </section>
   </main>
@@ -96,7 +102,7 @@
       <div class="footer-grid">
         <div>
           <h2>Autonomous Controls Laboratory</h2>
-          <p>Department of Mechanical Engineering<br>
+          <p>Dept. of ECE<br>
              University of California, Berkeley<br>
              Berkeley, CA 94720</p>
         </div>
@@ -105,6 +111,7 @@
           <ul>
             <li><a href="../research.html">Research</a></li>
             <li><a href="../people.html">People</a></li>
+            <li><a href="../software.html">Software</a></li>
             <li><a href="../publications.html">Publications</a></li>
             <li><a href="../contact.html">Join &amp; Contact</a></li>
           </ul>
@@ -118,7 +125,7 @@
           </ul>
         </div>
       </div>
-      <p class="footer-bottom">© 2026 Autonomous Controls Laboratory, UC Berkeley.</p>
+      <p class="footer-bottom">&copy; 2026 Autonomous Controls Laboratory, UC Berkeley.</p>
     </div>
   </footer>
 
