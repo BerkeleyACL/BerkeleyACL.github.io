@@ -24,7 +24,7 @@
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../research.html" aria-current="page">Research</a></li>
+          <li><a href="../research.html" aria-current="page">Research &amp; Selected Projects</a></li>
           <li><a href="../people.html">People</a></li>
           <li><a href="../software.html">Software</a></li>
           <li><a href="../publications.html">Publications</a></li>
@@ -68,16 +68,75 @@
       <div class="container">
         <h2 id="results-heading">Results &amp; media</h2>
         <p class="section-intro">
-          Figures and videos for this project will appear here.
+          QOCO is software, so the page foregrounds the solver structure,
+          custom-code path, and documentation instead of using generic imagery.
         </p>
+        <div class="project-showcase">
+          <div class="project-showcase-copy">
+            <p class="project-kicker">Embedded conic optimization</p>
+            <p>
+              QOCO solves second-order cone programs with quadratic objectives.
+              The companion generator produces custom C solvers for repeated
+              problem families, using static memory and no external library stack.
+            </p>
+            <ul class="project-facts">
+              <li><strong>Core</strong><span>Primal-dual interior point method written in C.</span></li>
+              <li><strong>Problem</strong><span>Quadratic objective with nonnegative and second-order cone constraints.</span></li>
+              <li><strong>Use case</strong><span>Predictable solver behavior for onboard trajectory optimization.</span></li>
+            </ul>
+            <p class="project-actions">
+              <a class="project-action" href="https://qoco-org.github.io/qoco/" rel="noopener">Open docs</a>
+              <a class="project-action project-action-secondary" href="https://github.com/qoco-org/qoco" rel="noopener">Open code</a>
+            </p>
+          </div>
+          <div class="project-visual visual-qoco" data-project-tilt>
+            <svg viewBox="0 0 720 420" role="img" aria-labelledby="qoco-visual-title">
+              <title id="qoco-visual-title">QOCO conic optimization visual</title>
+              <defs>
+                <linearGradient id="qoco-cone" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#FDB515" stop-opacity="0.9"></stop>
+                  <stop offset="100%" stop-color="#3B7EA1" stop-opacity="0.16"></stop>
+                </linearGradient>
+              </defs>
+              <rect width="720" height="420" fill="#f8fbfd"></rect>
+              <g transform="translate(70 68)">
+                <rect class="visual-panel" width="250" height="238" rx="10"></rect>
+                <text class="visual-label" x="24" y="42">problem data</text>
+                <text class="visual-note" x="24" y="72">minimize 1/2 x'Px + c'x</text>
+                <text class="visual-note" x="24" y="100">subject to Gx in cone</text>
+                <g transform="translate(24 128)">
+                  <rect x="0" y="0" width="36" height="36" fill="#003262" opacity="0.88"></rect>
+                  <rect x="42" y="0" width="36" height="36" fill="#3B7EA1" opacity="0.78"></rect>
+                  <rect x="84" y="0" width="36" height="36" fill="#FDB515" opacity="0.86"></rect>
+                  <rect x="126" y="0" width="36" height="36" fill="#003262" opacity="0.45"></rect>
+                  <rect x="0" y="42" width="36" height="36" fill="#3B7EA1" opacity="0.45"></rect>
+                  <rect x="42" y="42" width="36" height="36" fill="#003262" opacity="0.75"></rect>
+                  <rect x="84" y="42" width="36" height="36" fill="#3B7EA1" opacity="0.65"></rect>
+                  <rect x="126" y="42" width="36" height="36" fill="#FDB515" opacity="0.76"></rect>
+                </g>
+              </g>
+              <g transform="translate(392 50)">
+                <path d="M118 22 L238 318 L0 318 Z" fill="url(#qoco-cone)" stroke="#003262" stroke-width="3"></path>
+                <ellipse cx="118" cy="318" rx="118" ry="28" fill="#3B7EA1" opacity="0.22" stroke="#003262" stroke-width="2"></ellipse>
+                <path class="visual-path-soft visual-flow" d="M46 275 C98 214 144 162 202 82"></path>
+                <circle cx="46" cy="275" r="9" class="visual-blue"></circle>
+                <circle cx="124" cy="194" r="9" class="visual-gold visual-pulse"></circle>
+                <circle cx="202" cy="82" r="9" class="visual-blue"></circle>
+                <text class="visual-label" x="44" y="356">cone projection</text>
+              </g>
+              <g transform="translate(290 315)">
+                <rect class="visual-panel" width="174" height="58" rx="8"></rect>
+                <text class="visual-label" x="18" y="32">QOCOGEN</text>
+                <text class="visual-note" x="18" y="50">custom static solver</text>
+              </g>
+              <path class="visual-path-soft visual-flow" d="M320 187 C366 212 386 252 378 315"></path>
+            </svg>
+          </div>
+        </div>
         <div class="figure-row">
           <figure class="result">
-            <div class="figure-placeholder">Figure placeholder. Add a result plot or render here</div>
-            <figcaption>Caption explaining the result in plain language, with a pointer to the paper.</figcaption>
-          </figure>
-          <figure class="result">
-            <div class="figure-placeholder">Video placeholder. Add a simulation or flight clip here</div>
-            <figcaption>Caption describing what the clip shows.</figcaption>
+            <img class="project-result-image" src="../assets/projects/qoco-architecture.png" alt="QOCO solver logo">
+            <figcaption>QOCO is maintained as an open solver stack for quadratic-objective conic optimization.</figcaption>
           </figure>
         </div>
       </div>
@@ -88,7 +147,8 @@
         <h2 id="links-heading">Learn more</h2>
         <ul>
           <li><a href="https://github.com/qoco-org/qoco" rel="noopener">QOCO source code on GitHub</a></li>
-          <li><a href="https://arxiv.org/search/?searchtype=all&amp;query=QOCO+quadratic+objective+conic+optimizer" rel="noopener">Find the QOCO paper on arXiv</a></li>
+          <li><a href="https://qoco-org.github.io/qoco/" rel="noopener">QOCO documentation</a></li>
+          <li><a href="https://uwacl.com/qoco-quadratic-objective-conic-optimizer-qoco" rel="noopener">Project record</a></li>
         </ul>
         <p class="section-link"><a href="../research.html">Back to Research</a></p>
       </div>
@@ -107,7 +167,7 @@
         <div>
           <h2>Site</h2>
           <ul>
-            <li><a href="../research.html">Research</a></li>
+            <li><a href="../research.html">Research &amp; Selected Projects</a></li>
             <li><a href="../people.html">People</a></li>
             <li><a href="../software.html">Software</a></li>
             <li><a href="../publications.html">Publications</a></li>
@@ -119,7 +179,7 @@
           <ul>
             <li><a href="https://scholar.google.com/citations?user=YEdJKr8AAAAJ&amp;hl=en" rel="noopener">Google Scholar</a></li>
             <li><a href="https://github.com/UW-ACL" rel="noopener">GitHub</a></li>
-            <li><a href="https://uwacl.com/" rel="noopener">Former site (UW)</a></li>
+            <li><a href="https://uwacl.com/" rel="noopener">UW ACL</a></li>
           </ul>
         </div>
       </div>

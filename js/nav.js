@@ -40,3 +40,23 @@
     try { v.currentTime = 0; v.load(); } catch (e) { /* poster fallback */ }
   });
 })();
+
+// Lightweight depth cue for project diagrams.
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  document.querySelectorAll("[data-project-tilt]").forEach(function (el) {
+    el.addEventListener("pointermove", function (event) {
+      var rect = el.getBoundingClientRect();
+      var x = (event.clientX - rect.left) / rect.width - 0.5;
+      var y = (event.clientY - rect.top) / rect.height - 0.5;
+      el.style.setProperty("--project-tilt-x", (x * 4).toFixed(2) + "deg");
+      el.style.setProperty("--project-tilt-y", (y * -3).toFixed(2) + "deg");
+    });
+
+    el.addEventListener("pointerleave", function () {
+      el.style.setProperty("--project-tilt-x", "0deg");
+      el.style.setProperty("--project-tilt-y", "0deg");
+    });
+  });
+})();

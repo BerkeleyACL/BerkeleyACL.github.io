@@ -26,7 +26,7 @@ Generated for the PR branch on 2026-07-05.
 Header navigation:
 
 - Home
-- Research
+- Research & Selected Projects
 - People
 - Software
 - Publications
@@ -39,14 +39,14 @@ Footer:
 - Dept. of ECE
 - University of California, Berkeley
 - Berkeley, CA 94720
-- Research
+- Research & Selected Projects
 - People
 - Software
 - Publications
 - Join and Contact
 - Google Scholar
 - GitHub
-- Former site (UW)
+- UW ACL
 - Copyright 2026 Autonomous Controls Laboratory, UC Berkeley.
 
 ## Home
@@ -141,7 +141,7 @@ Principal Investigator:
 - Professor, Dept. of ECE, University of California, Berkeley
 - Beh&ccedil;et A&ccedil;&#305;kme&#351;e leads the lab's work on convex optimization for autonomous control, trajectory optimization, robust control, and aerospace systems.
 
-Current members:
+Current PhD Students:
 
 - Carlos Morales
 - PhD Student
@@ -149,6 +149,9 @@ Current members:
 - Fabio Spada
 - PhD Student
 - Uncertainty-aware trajectory planning.
+- Ziad Ramadan
+- PhD Student
+- Guidance and trajectory generation for large scale applications.
 
 Incoming PhD students:
 
@@ -218,6 +221,24 @@ Profile page pattern:
 - Profile pages use only verified status, program, research-interest, destination, and source-record copy.
 - External profile links appear only when high-confidence.
 - Incoming placeholders are not clickable people profiles.
+
+Ziad Ramadan profile page:
+
+- Ziad Ramadan
+- Current PhD Student
+- PhD Student
+- Ziad is a PhD student interested in guidance and trajectory generation for large scale applications.
+- Research interests: Guidance and trajectory generation for large scale applications.
+- LinkedIn
+
+Project page media notes:
+
+- HALO uses HALO source code, arXiv paper `2304.01583`, the HALO demonstration video, and the ICRA 2023 presentation video.
+- QOCO uses QOCO documentation and the qoco-org GitHub repository.
+- Continuous-Time SCvx uses arXiv paper `2404.16826` and the UW-ACL `ct-scvx` repository.
+- Cislunar Relative Motion uses arXiv paper `2502.00215`.
+- Discrete Lossless Convexification uses arXiv paper `2501.06931` and the UW-ACL `DT-LCvx-Pointing` repository.
+- Temporal and Logical Specifications uses arXiv paper `2405.10996` and the UW-ACL `D-GMSR` and `TrajOpt_CT-STL` repositories.
 
 ## Software
 

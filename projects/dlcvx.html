@@ -24,7 +24,7 @@
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../research.html" aria-current="page">Research</a></li>
+          <li><a href="../research.html" aria-current="page">Research &amp; Selected Projects</a></li>
           <li><a href="../people.html">People</a></li>
           <li><a href="../software.html">Software</a></li>
           <li><a href="../publications.html">Publications</a></li>
@@ -70,16 +70,67 @@
       <div class="container">
         <h2 id="results-heading">Results &amp; media</h2>
         <p class="section-intro">
-          Figures and videos for this project will appear here.
+          The project extends lossless convexification into the discrete-time
+          problem the onboard computer actually solves.
         </p>
+        <div class="project-showcase">
+          <div class="project-showcase-copy">
+            <p class="project-kicker">Pointing-constrained discrete guidance</p>
+            <p>
+              DLCvx formulates a convex relaxation for discrete-time nonconvex
+              optimal control problems and gives conditions under which the
+              relaxed solution satisfies the original constraints at grid points.
+              The pointing work extends that theory to annular-sector control.
+            </p>
+            <ul class="project-facts">
+              <li><strong>Problem</strong><span>Discrete-time optimal control with pointing constraints.</span></li>
+              <li><strong>Guarantee</strong><span>Conditions for when the relaxed solution satisfies the original nonconvex problem.</span></li>
+              <li><strong>Code</strong><span>Notebook-based demonstration for pointing-constrained DLCvx.</span></li>
+            </ul>
+            <p class="project-actions">
+              <a class="project-action" href="https://arxiv.org/abs/2501.06931" rel="noopener">Read paper</a>
+              <a class="project-action project-action-secondary" href="https://github.com/UW-ACL/DT-LCvx-Pointing" rel="noopener">Open code</a>
+            </p>
+          </div>
+          <div class="project-visual visual-dlcvx" data-project-tilt>
+            <svg viewBox="0 0 720 420" role="img" aria-labelledby="dlcvx-visual-title">
+              <title id="dlcvx-visual-title">Discrete lossless convexification pointing visual</title>
+              <rect width="720" height="420" fill="#f8fbfd"></rect>
+              <line x1="74" y1="322" x2="646" y2="322" class="visual-axis"></line>
+              <line x1="112" y1="76" x2="112" y2="340" class="visual-axis"></line>
+              <path class="visual-path" d="M112 298 C178 236 224 193 280 162 C340 129 411 122 474 104 C538 86 592 68 638 48"></path>
+              <path class="visual-path-soft visual-flow" d="M112 298 L198 232 L284 168 L370 138 L456 112 L542 82 L638 48"></path>
+              <g fill="#003262">
+                <circle cx="112" cy="298" r="8"></circle>
+                <circle cx="198" cy="232" r="8"></circle>
+                <circle cx="284" cy="168" r="8"></circle>
+                <circle cx="370" cy="138" r="8"></circle>
+                <circle cx="456" cy="112" r="8"></circle>
+                <circle cx="542" cy="82" r="8"></circle>
+                <circle cx="638" cy="48" r="8"></circle>
+              </g>
+              <g opacity="0.75">
+                <path d="M198 232 L258 195 A72 72 0 0 1 244 272 Z" fill="#FDB515" opacity="0.28" stroke="#FDB515" stroke-width="2"></path>
+                <path d="M370 138 L430 98 A72 72 0 0 1 426 180 Z" fill="#FDB515" opacity="0.28" stroke="#FDB515" stroke-width="2"></path>
+                <path d="M542 82 L604 45 A72 72 0 0 1 588 126 Z" fill="#FDB515" opacity="0.28" stroke="#FDB515" stroke-width="2"></path>
+              </g>
+              <g class="visual-pulse">
+                <path d="M370 138 L410 114" stroke="#003262" stroke-width="6" stroke-linecap="round"></path>
+                <path d="M410 114 L398 112 L405 126 Z" fill="#003262"></path>
+              </g>
+              <rect class="visual-panel" x="92" y="34" width="242" height="70" rx="8"></rect>
+              <text class="visual-label" x="110" y="64">discrete nodes</text>
+              <text class="visual-note" x="110" y="86">grid-level guarantees for flight code</text>
+              <rect class="visual-panel" x="404" y="286" width="236" height="62" rx="8"></rect>
+              <text class="visual-label" x="422" y="314">pointing sector</text>
+              <text class="visual-note" x="422" y="336">control inactive or inside cone</text>
+            </svg>
+          </div>
+        </div>
         <div class="figure-row">
           <figure class="result">
-            <div class="figure-placeholder">Figure placeholder. Add a result plot or render here</div>
-            <figcaption>Caption explaining the result in plain language, with a pointer to the paper.</figcaption>
-          </figure>
-          <figure class="result">
-            <div class="figure-placeholder">Video placeholder. Add a simulation or flight clip here</div>
-            <figcaption>Caption describing what the clip shows.</figcaption>
+            <img class="project-result-image" src="../assets/projects/dlcvx-pointing.jpg" alt="Pointing-constrained trajectory figure">
+            <figcaption>Project figure showing a trajectory with control vectors and in-plane projections.</figcaption>
           </figure>
         </div>
       </div>
@@ -89,8 +140,9 @@
       <div class="container">
         <h2 id="links-heading">Learn more</h2>
         <ul>
-          <li><a href="https://arxiv.org/search/?searchtype=all&amp;query=discrete+lossless+convexification+pointing+constraints" rel="noopener">Find the papers on arXiv</a></li>
-          <li><a href="https://github.com/UW-ACL" rel="noopener">Lab GitHub organization</a></li>
+          <li><a href="https://arxiv.org/abs/2501.06931" rel="noopener">DLCvx pointing paper on arXiv</a></li>
+          <li><a href="https://github.com/UW-ACL/DT-LCvx-Pointing" rel="noopener">DLCvx pointing source code</a></li>
+          <li><a href="https://uwacl.com/research-highlight/discrete-lossless-convexification-for-pointing-constraints" rel="noopener">Project record</a></li>
         </ul>
         <p class="section-link"><a href="../research.html">Back to Research</a></p>
       </div>
@@ -109,7 +161,7 @@
         <div>
           <h2>Site</h2>
           <ul>
-            <li><a href="../research.html">Research</a></li>
+            <li><a href="../research.html">Research &amp; Selected Projects</a></li>
             <li><a href="../people.html">People</a></li>
             <li><a href="../software.html">Software</a></li>
             <li><a href="../publications.html">Publications</a></li>
@@ -121,7 +173,7 @@
           <ul>
             <li><a href="https://scholar.google.com/citations?user=YEdJKr8AAAAJ&amp;hl=en" rel="noopener">Google Scholar</a></li>
             <li><a href="https://github.com/UW-ACL" rel="noopener">GitHub</a></li>
-            <li><a href="https://uwacl.com/" rel="noopener">Former site (UW)</a></li>
+            <li><a href="https://uwacl.com/" rel="noopener">UW ACL</a></li>
           </ul>
         </div>
       </div>
