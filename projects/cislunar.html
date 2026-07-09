@@ -24,7 +24,7 @@
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../research.html" aria-current="page">Research</a></li>
+          <li><a href="../research.html" aria-current="page">Research &amp; Selected Projects</a></li>
           <li><a href="../people.html">People</a></li>
           <li><a href="../software.html">Software</a></li>
           <li><a href="../publications.html">Publications</a></li>
@@ -68,16 +68,58 @@
       <div class="container">
         <h2 id="results-heading">Results &amp; media</h2>
         <p class="section-intro">
-          Figures and videos for this project will appear here.
+          The project figure shows a relative trajectory around an admissible
+          region, with impulse locations along the arc.
         </p>
+        <div class="project-showcase">
+          <div class="project-showcase-copy">
+            <p class="project-kicker">Impulsive cislunar guidance</p>
+            <p>
+              The method chooses impulse timing, location, magnitude, and
+              direction to loiter near a target while satisfying path constraints
+              over the full horizon. The validation case uses relative motion
+              near a selenocentric near-rectilinear halo orbit.
+            </p>
+            <ul class="project-facts">
+              <li><strong>Dynamics</strong><span>Non-stationary cislunar regimes where simple two-body intuition fails.</span></li>
+              <li><strong>Control</strong><span>Finite impulse sequence optimized in a model predictive framework.</span></li>
+              <li><strong>Constraint</strong><span>Path constraints enforced continuously over the time horizon.</span></li>
+            </ul>
+            <p class="project-actions">
+              <a class="project-action" href="https://arxiv.org/abs/2502.00215" rel="noopener">Read paper</a>
+              <a class="project-action project-action-secondary" href="https://uwacl.com/research-highlight/impulsive-relative-motion-control-with-continuous-time-constraint-satisfaction-for-cislunar-space-missions" rel="noopener">Project record</a>
+            </p>
+          </div>
+          <div class="project-visual visual-cislunar" data-project-tilt>
+            <svg viewBox="0 0 720 420" role="img" aria-labelledby="cislunar-visual-title">
+              <title id="cislunar-visual-title">Cislunar relative motion and impulse visual</title>
+              <rect width="720" height="420" fill="#f8fbfd"></rect>
+              <circle cx="170" cy="210" r="54" fill="#003262" opacity="0.92"></circle>
+              <circle cx="558" cy="170" r="34" fill="#d8dde2"></circle>
+              <circle cx="558" cy="170" r="92" fill="none" stroke="#3B7EA1" stroke-width="2" stroke-dasharray="9 11"></circle>
+              <ellipse cx="374" cy="210" rx="248" ry="118" fill="none" stroke="#003262" stroke-width="4" opacity="0.26"></ellipse>
+              <ellipse cx="374" cy="210" rx="202" ry="88" fill="none" stroke="#3B7EA1" stroke-width="3" opacity="0.42"></ellipse>
+              <g class="visual-orbit">
+                <path class="visual-path visual-flow" d="M238 206 C305 70 500 90 573 166 C642 239 485 342 330 297 C244 272 202 238 238 206"></path>
+              </g>
+              <circle cx="360" cy="230" r="86" fill="#3B7EA1" opacity="0.12" stroke="#003262" stroke-width="2"></circle>
+              <g fill="#FDB515" stroke="#003262" stroke-width="3" class="visual-pulse">
+                <path d="M286 143 L308 155 L286 167 Z"></path>
+                <path d="M488 121 L510 133 L488 145 Z"></path>
+                <path d="M508 308 L530 320 L508 332 Z"></path>
+              </g>
+              <circle cx="360" cy="230" r="8" class="visual-blue"></circle>
+              <text class="visual-label" x="94" y="290">Earth</text>
+              <text class="visual-label" x="520" y="108">Moon</text>
+              <text class="visual-label" x="256" y="368">optimized impulse arc</text>
+              <text class="visual-note" x="256" y="390">loitering while staying inside path limits</text>
+            </svg>
+          </div>
+        </div>
         <div class="figure-row">
           <figure class="result">
-            <div class="figure-placeholder">Figure placeholder. Add a result plot or render here</div>
-            <figcaption>Caption explaining the result in plain language, with a pointer to the paper.</figcaption>
-          </figure>
-          <figure class="result">
-            <div class="figure-placeholder">Video placeholder. Add a simulation or flight clip here</div>
-            <figcaption>Caption describing what the clip shows.</figcaption>
+            <img class="project-result-image" src="../assets/projects/cislunar-impulses.jpg" alt="3D cislunar impulse trajectory figure">
+            <figcaption>Source figure showing target-relative motion, impulse locations, and the admissible region for cislunar loitering.</figcaption>
           </figure>
         </div>
       </div>
@@ -87,8 +129,8 @@
       <div class="container">
         <h2 id="links-heading">Learn more</h2>
         <ul>
-          <li><a href="https://arxiv.org/search/?searchtype=all&amp;query=impulsive+relative+motion+cislunar" rel="noopener">Find the papers on arXiv</a></li>
-          <li><a href="https://github.com/UW-ACL" rel="noopener">Lab GitHub organization</a></li>
+          <li><a href="https://arxiv.org/abs/2502.00215" rel="noopener">Cislunar relative motion paper on arXiv</a></li>
+          <li><a href="https://uwacl.com/research-highlight/impulsive-relative-motion-control-with-continuous-time-constraint-satisfaction-for-cislunar-space-missions" rel="noopener">Project record</a></li>
         </ul>
         <p class="section-link"><a href="../research.html">Back to Research</a></p>
       </div>
@@ -100,14 +142,14 @@
       <div class="footer-grid">
         <div>
           <h2>Autonomous Controls Laboratory</h2>
-          <p>Dept. of ECE<br>
+          <p>Departments of EECS and Mechanical Engineering<br>
              University of California, Berkeley<br>
              Berkeley, CA 94720</p>
         </div>
         <div>
           <h2>Site</h2>
           <ul>
-            <li><a href="../research.html">Research</a></li>
+            <li><a href="../research.html">Research &amp; Selected Projects</a></li>
             <li><a href="../people.html">People</a></li>
             <li><a href="../software.html">Software</a></li>
             <li><a href="../publications.html">Publications</a></li>
@@ -119,7 +161,7 @@
           <ul>
             <li><a href="https://scholar.google.com/citations?user=YEdJKr8AAAAJ&amp;hl=en" rel="noopener">Google Scholar</a></li>
             <li><a href="https://github.com/UW-ACL" rel="noopener">GitHub</a></li>
-            <li><a href="https://uwacl.com/" rel="noopener">Former site (UW)</a></li>
+            <li><a href="https://uwacl.com/" rel="noopener">UW ACL</a></li>
           </ul>
         </div>
       </div>

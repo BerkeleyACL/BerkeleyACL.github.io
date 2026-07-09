@@ -24,7 +24,7 @@
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../research.html" aria-current="page">Research</a></li>
+          <li><a href="../research.html" aria-current="page">Research &amp; Selected Projects</a></li>
           <li><a href="../people.html">People</a></li>
           <li><a href="../software.html">Software</a></li>
           <li><a href="../publications.html">Publications</a></li>
@@ -69,16 +69,66 @@
       <div class="container">
         <h2 id="results-heading">Results &amp; media</h2>
         <p class="section-intro">
-          Figures and videos for this project will appear here.
+          The project is about eliminating the gap between node-level feasibility
+          and continuous-time safety.
         </p>
+        <div class="project-showcase">
+          <div class="project-showcase-copy">
+            <p class="project-kicker">Constraints between nodes</p>
+            <p>
+              CT-SCVX reformulates path constraints so the trajectory remains
+              safe between discretization points. The method combines
+              generalized time dilation, multiple shooting, exact penalization,
+              and a prox-linear sequential convex program.
+            </p>
+            <ul class="project-facts">
+              <li><strong>Guarantee</strong><span>Continuous-time constraint satisfaction without dense mesh refinement.</span></li>
+              <li><strong>Examples</strong><span>Obstacle avoidance, 6-DoF rocket landing, 3-DoF landing, and grasp optimization.</span></li>
+              <li><strong>Code</strong><span>Open-source repository for the arXiv 2024 release.</span></li>
+            </ul>
+            <p class="project-actions">
+              <a class="project-action" href="https://arxiv.org/abs/2404.16826" rel="noopener">Read paper</a>
+              <a class="project-action project-action-secondary" href="https://github.com/UW-ACL/ct-scvx" rel="noopener">Open code</a>
+            </p>
+          </div>
+          <div class="project-visual visual-ct-scvx" data-project-tilt>
+            <svg viewBox="0 0 720 420" role="img" aria-labelledby="ctscvx-visual-title">
+              <title id="ctscvx-visual-title">Continuous-time SCvx path constraint visual</title>
+              <defs>
+                <pattern id="ct-grid" width="42" height="42" patternUnits="userSpaceOnUse">
+                  <path d="M42 0H0V42" class="visual-grid" fill="none"></path>
+                </pattern>
+              </defs>
+              <rect width="720" height="420" fill="url(#ct-grid)"></rect>
+              <rect x="72" y="68" width="576" height="250" rx="18" fill="#fff" opacity="0.72" stroke="#dde4ea"></rect>
+              <path d="M96 250 C165 120 235 292 310 192 C380 100 442 260 520 178 C570 127 604 118 646 132" fill="none" stroke="#FDB515" stroke-width="48" opacity="0.22" stroke-linecap="round"></path>
+              <path class="visual-path visual-flow" d="M96 250 C165 120 235 292 310 192 C380 100 442 260 520 178 C570 127 604 118 646 132"></path>
+              <g fill="#003262">
+                <circle cx="96" cy="250" r="8"></circle>
+                <circle cx="182" cy="178" r="8"></circle>
+                <circle cx="266" cy="238" r="8"></circle>
+                <circle cx="350" cy="154" r="8"></circle>
+                <circle cx="432" cy="216" r="8"></circle>
+                <circle cx="520" cy="178" r="8"></circle>
+                <circle cx="646" cy="132" r="8"></circle>
+              </g>
+              <circle cx="246" cy="156" r="42" fill="#b45a4b" opacity="0.24"></circle>
+              <circle cx="468" cy="128" r="38" fill="#b45a4b" opacity="0.24"></circle>
+              <path d="M246 156 m-52 0 a52 52 0 1 0 104 0 a52 52 0 1 0 -104 0" fill="none" stroke="#b45a4b" stroke-width="3" stroke-dasharray="8 8"></path>
+              <path d="M468 128 m-48 0 a48 48 0 1 0 96 0 a48 48 0 1 0 -96 0" fill="none" stroke="#b45a4b" stroke-width="3" stroke-dasharray="8 8"></path>
+              <g class="visual-pulse">
+                <circle cx="310" cy="192" r="14" fill="#FDB515" opacity="0.8"></circle>
+              </g>
+              <text class="visual-label" x="96" y="352">sparse nodes</text>
+              <text class="visual-note" x="96" y="374">trajectory is checked continuously, not only at samples</text>
+              <text class="visual-label" x="454" y="72">keep-out regions</text>
+            </svg>
+          </div>
+        </div>
         <div class="figure-row">
           <figure class="result">
-            <div class="figure-placeholder">Figure placeholder. Add a result plot or render here</div>
-            <figcaption>Caption explaining the result in plain language, with a pointer to the paper.</figcaption>
-          </figure>
-          <figure class="result">
-            <div class="figure-placeholder">Video placeholder. Add a simulation or flight clip here</div>
-            <figcaption>Caption describing what the clip shows.</figcaption>
+            <img class="project-result-image" src="../assets/projects/ct-scvx-result.png" alt="Continuous-time SCvx inter-sample violation figure">
+            <figcaption>Project figure for successive convexification with continuous-time constraint satisfaction.</figcaption>
           </figure>
         </div>
       </div>
@@ -88,8 +138,9 @@
       <div class="container">
         <h2 id="links-heading">Learn more</h2>
         <ul>
-          <li><a href="https://arxiv.org/search/?searchtype=all&amp;query=successive+convexification+continuous+time+constraint+satisfaction" rel="noopener">Find the papers on arXiv</a></li>
-          <li><a href="https://github.com/UW-ACL" rel="noopener">Lab GitHub organization</a></li>
+          <li><a href="https://arxiv.org/abs/2404.16826" rel="noopener">CT-SCVX paper on arXiv</a></li>
+          <li><a href="https://github.com/UW-ACL/ct-scvx" rel="noopener">CT-SCVX source code</a></li>
+          <li><a href="https://uwacl.com/successive-convexification-with-continuous-time-constraint-satisfaction" rel="noopener">Project record</a></li>
         </ul>
         <p class="section-link"><a href="../research.html">Back to Research</a></p>
       </div>
@@ -101,14 +152,14 @@
       <div class="footer-grid">
         <div>
           <h2>Autonomous Controls Laboratory</h2>
-          <p>Dept. of ECE<br>
+          <p>Departments of EECS and Mechanical Engineering<br>
              University of California, Berkeley<br>
              Berkeley, CA 94720</p>
         </div>
         <div>
           <h2>Site</h2>
           <ul>
-            <li><a href="../research.html">Research</a></li>
+            <li><a href="../research.html">Research &amp; Selected Projects</a></li>
             <li><a href="../people.html">People</a></li>
             <li><a href="../software.html">Software</a></li>
             <li><a href="../publications.html">Publications</a></li>
@@ -120,7 +171,7 @@
           <ul>
             <li><a href="https://scholar.google.com/citations?user=YEdJKr8AAAAJ&amp;hl=en" rel="noopener">Google Scholar</a></li>
             <li><a href="https://github.com/UW-ACL" rel="noopener">GitHub</a></li>
-            <li><a href="https://uwacl.com/" rel="noopener">Former site (UW)</a></li>
+            <li><a href="https://uwacl.com/" rel="noopener">UW ACL</a></li>
           </ul>
         </div>
       </div>

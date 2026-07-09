@@ -26,7 +26,7 @@ Generated for the PR branch on 2026-07-05.
 Header navigation:
 
 - Home
-- Research
+- Research & Selected Projects
 - People
 - Software
 - Publications
@@ -36,17 +36,17 @@ Header navigation:
 Footer:
 
 - Autonomous Controls Laboratory
-- Dept. of ECE
+- Departments of EECS and Mechanical Engineering
 - University of California, Berkeley
 - Berkeley, CA 94720
-- Research
+- Research & Selected Projects
 - People
 - Software
 - Publications
 - Join and Contact
 - Google Scholar
 - GitHub
-- Former site (UW)
+- UW ACL
 - Copyright 2026 Autonomous Controls Laboratory, UC Berkeley.
 
 ## Home
@@ -133,30 +133,25 @@ Selected projects:
 Metadata:
 
 - Title: People, Autonomous Controls Laboratory, UC Berkeley
-- Description: People of the Autonomous Controls Laboratory at UC Berkeley: Prof. Beh&ccedil;et A&ccedil;&#305;kme&#351;e, current PhD students, incoming students, and alumni.
+- Description: People of the Autonomous Controls Laboratory at UC Berkeley: Prof. Beh&ccedil;et A&ccedil;&#305;kme&#351;e, current PhD students, and alumni.
 
 Principal Investigator:
 
 - Prof. Beh&ccedil;et A&ccedil;&#305;kme&#351;e
-- Professor, Dept. of ECE, University of California, Berkeley
+- Professor, Departments of EECS and Mechanical Engineering, University of California, Berkeley
 - Beh&ccedil;et A&ccedil;&#305;kme&#351;e leads the lab's work on convex optimization for autonomous control, trajectory optimization, robust control, and aerospace systems.
 
-Current members:
+Current PhD Students:
 
-- Carlos Morales
-- PhD Student
-- Guidance and trajectory design for entry, descent, and landing.
 - Fabio Spada
 - PhD Student
 - Uncertainty-aware trajectory planning.
-
-Incoming PhD students:
-
-- The lab is recruiting its first Berkeley cohort. New members will be announced here.
-- Announcing soon
-- Incoming PhD Student, Fall 2026
-- This could be you
-- Apply to join the lab
+- Carlos Morales
+- PhD Student
+- Guidance and trajectory design for entry, descent, and landing.
+- Ziad Ramadan
+- PhD Student
+- Guidance and trajectory generation for large scale applications.
 
 Recent UW ACL alumni:
 
@@ -217,7 +212,35 @@ Profile page pattern:
 - Each real person links to `people/<slug>.html`.
 - Profile pages use only verified status, program, research-interest, destination, and source-record copy.
 - External profile links appear only when high-confidence.
-- Incoming placeholders are not clickable people profiles.
+- No incoming PhD placeholder section appears on the People page.
+
+Beh&ccedil;et A&ccedil;&#305;kme&#351;e profile page:
+
+- Professor, Departments of EECS and Mechanical Engineering, University of California, Berkeley
+- Contact: behcet [at] berkeley.edu
+- Education: PhD, Aerospace Engineering, Purdue University; MS, Mechanical Engineering, Purdue University; BS, Civil Engineering, Middle East Technical University (Ankara, Turkey)
+- Bio: Dr. A&ccedil;&#305;kme&#351;e received his M.S. in Mechanical Engineering and his Ph.D. in Aerospace Engineering from Purdue University. He was a technologist and a senior member of the Guidance and Control (G&amp;C) Analysis Group at NASA Jet Propulsion Laboratory (JPL) from 2003 to 2012 and was a visiting Assistant Professor of Aerospace Engineering at Purdue University before joining JPL. At JPL, he developed guidance, control, and estimation algorithms for formation-flying spacecraft and distributed networked systems, proximity operations around asteroids and comets, and planetary landing, as well as developing interior point methods algorithms for the real-time solution of convex optimization problems. Dr. A&ccedil;&#305;kme&#351;e's research developed a fundamental result, known as lossless convexification, that provides the solution of a general class of nonconvex optimal control problems via computationally tractable convex optimization methods.
+- Research interests: Convex Optimization And Its Engineering Applications; Guidance, Navigation, And Control (GN&amp;C) Of Autonomous Vehicles; Model Predictive Control (MPC); Nonlinear And Robust Control; Distributed Control Systems.
+- Publications: Google Scholar.
+- Awards: University of Washington FACET Celebration, 2019; Asian Journal of Control best paper award for 2015; NSF CAREER Award, 2015; NASA Group Achievement Awards; AIAA Associate Fellow, 2014; AFRL Summer Faculty Fellowship; JPL Summer Faculty Award; Purdue University President Council Guest of Honor; IEEE Senior Member; JPL and NASA team awards; Purdue Research Foundation graduate research fellowship; Turkish Ministry of Education graduate fellowship; Scientific and Technological Research Council of Turkey graduate fellowship; over 15 NASA Tech Brief Awards.
+
+Ziad Ramadan profile page:
+
+- Ziad Ramadan
+- Current PhD Student
+- PhD Student
+- Ziad is a PhD student interested in guidance and trajectory generation for large scale applications.
+- Research interests: Guidance and trajectory generation for large scale applications.
+- LinkedIn
+
+Project page media notes:
+
+- HALO uses HALO source code, arXiv paper `2304.01583`, the HALO demonstration video, and the ICRA 2023 presentation video.
+- QOCO uses QOCO documentation and the qoco-org GitHub repository.
+- Continuous-Time SCvx uses arXiv paper `2404.16826` and the UW-ACL `ct-scvx` repository.
+- Cislunar Relative Motion uses arXiv paper `2502.00215`.
+- Discrete Lossless Convexification uses arXiv paper `2501.06931` and the UW-ACL `DT-LCvx-Pointing` repository.
+- Temporal and Logical Specifications uses arXiv paper `2405.10996` and the UW-ACL `D-GMSR` and `TrajOpt_CT-STL` repositories.
 
 ## Software
 
@@ -322,7 +345,7 @@ Main copy:
 
 - Join and Contact
 - The lab recruits students who want to connect control theory, optimization, and aerospace systems.
-- The lab welcomes PhD applicants prepared in control theory; optimization; applied mathematics; or aerospace engineering. Admission runs through UC Berkeley's graduate programs. Applicants should apply to the ECE PhD program and name Prof. A&ccedil;&#305;kme&#351;e as a potential advisor in the statement of purpose. Competitive applicants usually have exposure to convex optimization and dynamics and control. Scientific programming experience in Python, C/C++, or Julia is also expected.
+- The lab welcomes PhD applicants prepared in control theory; optimization; applied mathematics; or aerospace engineering. Admission runs through UC Berkeley's graduate programs. Applicants should apply to the EECS or Mechanical Engineering graduate program and name Prof. A&ccedil;&#305;kme&#351;e as a potential advisor in the statement of purpose. Competitive applicants usually have exposure to convex optimization and dynamics and control. Scientific programming experience in Python, C/C++, or Julia is also expected.
 
 ## Publication Sync Note
 

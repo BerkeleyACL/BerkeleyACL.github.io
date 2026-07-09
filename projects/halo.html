@@ -24,7 +24,7 @@
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../research.html" aria-current="page">Research</a></li>
+          <li><a href="../research.html" aria-current="page">Research &amp; Selected Projects</a></li>
           <li><a href="../people.html">People</a></li>
           <li><a href="../software.html">Software</a></li>
           <li><a href="../publications.html">Publications</a></li>
@@ -71,18 +71,79 @@
       <div class="container">
         <h2 id="results-heading">Results &amp; media</h2>
         <p class="section-intro">
-          Figures and videos for this project will appear here.
+          This page brings together the ICRA paper, source code, and
+          demonstration videos.
         </p>
+        <div class="project-showcase">
+          <div class="project-showcase-copy">
+            <p class="project-kicker">Perception and planning loop</p>
+            <p>
+              HALO couples terrain reasoning with trajectory generation. HALSS
+              filters point-cloud terrain into safe landing zones. Adaptive-DDTO
+              keeps multiple reachable targets alive while perception updates.
+            </p>
+            <ul class="project-facts">
+              <li><strong>Perception</strong><span>Hazard-aware landing site selection from terrain point clouds.</span></li>
+              <li><strong>Planner</strong><span>Adaptive deferred-decision trajectory optimization across candidate sites.</span></li>
+              <li><strong>Artifacts</strong><span>ICRA 2023 paper, HALO GitHub repository, and ACL demo videos.</span></li>
+            </ul>
+            <p class="project-actions">
+              <a class="project-action" href="https://arxiv.org/abs/2304.01583" rel="noopener">Read paper</a>
+              <a class="project-action project-action-secondary" href="https://github.com/UW-ACL/HALO" rel="noopener">Open code</a>
+              <a class="project-action project-action-secondary" href="https://www.youtube.com/watch?v=KqCXGDTntDU" rel="noopener">Watch demo</a>
+            </p>
+          </div>
+          <div class="project-visual visual-halo" data-project-tilt>
+            <svg viewBox="0 0 720 420" role="img" aria-labelledby="halo-visual-title">
+              <title id="halo-visual-title">HALO landing-site selection and divert guidance visual</title>
+              <defs>
+                <pattern id="halo-grid" width="36" height="36" patternUnits="userSpaceOnUse">
+                  <path d="M36 0H0V36" class="visual-grid" fill="none"></path>
+                </pattern>
+              </defs>
+              <rect width="720" height="420" fill="url(#halo-grid)"></rect>
+              <path d="M0 316 C95 280 165 306 252 277 C334 249 400 285 490 244 C575 205 642 232 720 198 L720 420 L0 420 Z" fill="#d7c7a2" opacity="0.7"></path>
+              <path d="M0 332 C108 288 165 326 252 293 C340 260 404 303 506 258 C592 220 656 251 720 218" fill="none" stroke="#9f8b5d" stroke-width="3" opacity="0.55"></path>
+              <circle cx="172" cy="292" r="32" fill="#b45a4b" opacity="0.28"></circle>
+              <circle cx="250" cy="318" r="24" fill="#b45a4b" opacity="0.26"></circle>
+              <circle cx="480" cy="264" r="38" fill="#b45a4b" opacity="0.24"></circle>
+              <circle cx="584" cy="226" r="28" fill="#b45a4b" opacity="0.24"></circle>
+              <circle cx="338" cy="286" r="42" fill="none" stroke="#FDB515" stroke-width="5"></circle>
+              <circle cx="625" cy="238" r="36" fill="none" stroke="#FDB515" stroke-width="5"></circle>
+              <path class="visual-path visual-flow" d="M98 80 C170 122 196 154 238 188 C282 223 336 228 374 258 C422 296 480 304 625 238"></path>
+              <path class="visual-path-soft" d="M374 258 C421 244 460 236 506 258"></path>
+              <path class="visual-path-soft" d="M238 188 C282 238 306 268 338 286"></path>
+              <g class="visual-float">
+                <path d="M96 55 L122 95 L101 88 L84 105 L82 79 L58 69 Z" fill="#FDB515" stroke="#003262" stroke-width="5" stroke-linejoin="round"></path>
+                <circle cx="98" cy="80" r="7" class="visual-blue"></circle>
+              </g>
+              <g class="visual-pulse">
+                <circle cx="625" cy="238" r="8" class="visual-gold"></circle>
+                <circle cx="338" cy="286" r="7" class="visual-gold"></circle>
+              </g>
+              <rect class="visual-panel" x="34" y="30" width="230" height="78" rx="8"></rect>
+              <text class="visual-label" x="52" y="61">HALSS terrain update</text>
+              <text class="visual-note" x="52" y="84">safe zones scored from point clouds</text>
+              <rect class="visual-panel" x="426" y="316" width="236" height="62" rx="8"></rect>
+              <text class="visual-label" x="444" y="345">Adaptive-DDTO</text>
+              <text class="visual-note" x="444" y="367">commit late, keep options reachable</text>
+            </svg>
+          </div>
+        </div>
         <div class="figure-row">
           <figure class="result">
-            <div class="figure-placeholder">Figure placeholder. Add a result plot or render here</div>
-            <figcaption>Caption explaining the result in plain language, with a pointer to the paper.</figcaption>
+            <img class="project-result-image" src="../assets/projects/halo-overview.png" alt="HALO system overview">
+            <figcaption>The HALO pipeline combines landing-site selection, adaptive multi-target planning, and simulated guidance.</figcaption>
           </figure>
           <figure class="result">
-            <div class="figure-placeholder">Video placeholder. Add a simulation or flight clip here</div>
-            <figcaption>Caption describing what the clip shows.</figcaption>
+            <img class="project-result-image" src="../assets/projects/halo-terrain.png" alt="HALO terrain and landing trajectory figure">
+            <figcaption>Source figure showing the terrain-aware planning setup used in the HALO project record.</figcaption>
           </figure>
         </div>
+        <ul class="media-link-list" aria-label="HALO media links">
+          <li><a href="https://www.youtube.com/watch?v=KqCXGDTntDU" rel="noopener">HALO demonstration video</a></li>
+          <li><a href="https://www.youtube.com/watch?v=tV0laX3ZvaY" rel="noopener">HALO ICRA 2023 presentation</a></li>
+        </ul>
       </div>
     </section>
 
@@ -90,8 +151,9 @@
       <div class="container">
         <h2 id="links-heading">Learn more</h2>
         <ul>
-          <li><a href="https://arxiv.org/search/?searchtype=all&amp;query=HALO+Hazard+Aware+Landing+Optimization" rel="noopener">Find the HALO papers on arXiv</a></li>
-          <li><a href="https://github.com/UW-ACL" rel="noopener">Lab GitHub organization</a></li>
+          <li><a href="https://arxiv.org/abs/2304.01583" rel="noopener">HALO paper on arXiv</a></li>
+          <li><a href="https://github.com/UW-ACL/HALO" rel="noopener">HALO source code</a></li>
+          <li><a href="https://uwacl.com/halo-hazard-aware-landing-optimization" rel="noopener">Project record</a></li>
         </ul>
         <p class="section-link"><a href="../research.html">Back to Research</a></p>
       </div>
@@ -103,14 +165,14 @@
       <div class="footer-grid">
         <div>
           <h2>Autonomous Controls Laboratory</h2>
-          <p>Dept. of ECE<br>
+          <p>Departments of EECS and Mechanical Engineering<br>
              University of California, Berkeley<br>
              Berkeley, CA 94720</p>
         </div>
         <div>
           <h2>Site</h2>
           <ul>
-            <li><a href="../research.html">Research</a></li>
+            <li><a href="../research.html">Research &amp; Selected Projects</a></li>
             <li><a href="../people.html">People</a></li>
             <li><a href="../software.html">Software</a></li>
             <li><a href="../publications.html">Publications</a></li>
@@ -122,7 +184,7 @@
           <ul>
             <li><a href="https://scholar.google.com/citations?user=YEdJKr8AAAAJ&amp;hl=en" rel="noopener">Google Scholar</a></li>
             <li><a href="https://github.com/UW-ACL" rel="noopener">GitHub</a></li>
-            <li><a href="https://uwacl.com/" rel="noopener">Former site (UW)</a></li>
+            <li><a href="https://uwacl.com/" rel="noopener">UW ACL</a></li>
           </ul>
         </div>
       </div>
