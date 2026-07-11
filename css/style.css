@@ -841,7 +841,7 @@ figure.result img.project-result-image {
 }
 
 .people-roster-current {
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .profile-card {
@@ -1142,6 +1142,10 @@ figure.result img.project-result-image {
 
   .profile-layout {
     grid-template-columns: 1fr;
+  }
+
+  .people-roster-current {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
 
   .software-item {

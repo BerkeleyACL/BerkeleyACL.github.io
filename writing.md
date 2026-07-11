@@ -133,7 +133,7 @@ Selected projects:
 Metadata:
 
 - Title: People, Autonomous Controls Laboratory, UC Berkeley
-- Description: People of the Autonomous Controls Laboratory at UC Berkeley: Prof. Beh&ccedil;et A&ccedil;&#305;kme&#351;e, current PhD students, and alumni.
+- Description: People of the Autonomous Controls Laboratory at UC Berkeley: Prof. Beh&ccedil;et A&ccedil;&#305;kme&#351;e, current PhD students, undergraduate researchers, and alumni.
 
 Principal Investigator:
 
@@ -145,13 +145,19 @@ Current PhD Students:
 
 - Fabio Spada
 - PhD Student
-- Uncertainty-aware trajectory planning.
+- Robust control and bilevel optimization.
 - Carlos Morales
 - PhD Student
 - Guidance and trajectory design for entry, descent, and landing.
 - Ziad Ramadan
 - PhD Student
 - Guidance and trajectory generation for large scale applications.
+
+Undergraduate Researchers:
+
+- Volk Thienpreecha
+- Undergraduate Researcher
+- Real-time trajectory optimization for robotic manipulation.
 
 Recent UW ACL alumni:
 
@@ -232,6 +238,24 @@ Ziad Ramadan profile page:
 - Ziad is a PhD student interested in guidance and trajectory generation for large scale applications.
 - Research interests: Guidance and trajectory generation for large scale applications.
 - LinkedIn
+
+Fabio Spada profile page:
+
+- Fabio Spada
+- Current PhD Student
+- PhD Student
+- Fabio is a PhD student specializing in robust control and bilevel optimization. He holds an M.S. in Space Engineering from Milan and has internship and working experience at Rocket Lab, the German Aerospace Center, and Indra.
+- Research interests: Robust control and bilevel optimization.
+- GitHub
+- Google Scholar
+- LinkedIn
+
+Volk Thienpreecha profile page:
+
+- Volk Thienpreecha
+- Undergraduate Researcher
+- Volk is an undergraduate researcher interested in trajectory optimization for robotic manipulation.
+- Research interests: Real-time trajectory optimization for robotic manipulation.
 
 Project page media notes:
 
