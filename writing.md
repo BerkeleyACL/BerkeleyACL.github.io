@@ -159,7 +159,7 @@ Undergraduate Researchers:
 - Undergraduate Researcher
 - Real-time trajectory optimization for robotic manipulation.
 
-Recent UW ACL alumni:
+Recent alumni:
 
 - Skye Mceowen
 - Samuel Buckner
@@ -183,7 +183,7 @@ Postdoctoral alumni:
 - Xiangru Xu, Assistant Professor at University of Wisconsin-Madison
 - Wei Sun, Assistant Professor at University of Oklahoma
 
-PhD alumni:
+Doctoral alumni:
 
 - Abhinav Kamath, now at Amazon Prime Air
 - Taewan Kim, now at SpaceX
@@ -192,10 +192,10 @@ PhD alumni:
 - Dylan Janak, Incoming Guidance Engineer at Amentum
 - Purnanand Elango, Research Scientist at MERL
 - Sarah Li, Assistant Professor at Georgia Tech
-- Yuanqi Mao
+- Yuanqi Mao, ACL alumni
 - Danylo Malyuta, now at SpaceX
 - Yue Yu, Assistant Professor at University of Minnesota
-- Adam Tahir
+- Adam Tahir, ACL alumni
 - Michael Szmuk, now at Amazon Prime Air
 - Nazli Demirer, now at Halliburton
 - Daniel Dueri, now at SpaceX
@@ -206,11 +206,11 @@ Master alumni:
 
 - Oliver Sheridan, now at Blue Origin
 - Aman Tiwary, PhD student at University of New Mexico
-- Yoshihide Arai
+- Yoshihide Arai, ACL alumni
 - Cole Morgan, now at SpaceX
-- Andrew W. Berning
-- Timothy V. Lowery
-- Can Pehlivanturk
+- Andrew W. Berning, ACL alumni
+- Timothy V. Lowery, ACL alumni
+- Can Pehlivanturk, ACL alumni
 - Mo Zhao, now at Apex
 
 Profile page pattern:
