@@ -133,7 +133,7 @@ Selected projects:
 Metadata:
 
 - Title: People, Autonomous Controls Laboratory, UC Berkeley
-- Description: People of the Autonomous Controls Laboratory at UC Berkeley: Prof. Beh&ccedil;et A&ccedil;&#305;kme&#351;e, current PhD students, and alumni.
+- Description: People of the Autonomous Controls Laboratory at UC Berkeley: Prof. Beh&ccedil;et A&ccedil;&#305;kme&#351;e, current PhD students, undergraduate researchers, and alumni.
 
 Principal Investigator:
 
@@ -145,7 +145,7 @@ Current PhD Students:
 
 - Fabio Spada
 - PhD Student
-- Uncertainty-aware trajectory planning.
+- Robust control and bilevel optimization.
 - Carlos Morales
 - PhD Student
 - Guidance and trajectory design for entry, descent, and landing.
@@ -153,7 +153,13 @@ Current PhD Students:
 - PhD Student
 - Guidance and trajectory generation for large scale applications.
 
-Recent UW ACL alumni:
+Undergraduate Researchers:
+
+- Volk Thienpreecha
+- Undergraduate Researcher
+- Real-time trajectory optimization for robotic manipulation.
+
+Recent alumni:
 
 - Skye Mceowen
 - Samuel Buckner
@@ -177,7 +183,7 @@ Postdoctoral alumni:
 - Xiangru Xu, Assistant Professor at University of Wisconsin-Madison
 - Wei Sun, Assistant Professor at University of Oklahoma
 
-PhD alumni:
+Doctoral alumni:
 
 - Abhinav Kamath, now at Amazon Prime Air
 - Taewan Kim, now at SpaceX
@@ -186,10 +192,10 @@ PhD alumni:
 - Dylan Janak, Incoming Guidance Engineer at Amentum
 - Purnanand Elango, Research Scientist at MERL
 - Sarah Li, Assistant Professor at Georgia Tech
-- Yuanqi Mao
+- Yuanqi Mao, ACL alumni
 - Danylo Malyuta, now at SpaceX
 - Yue Yu, Assistant Professor at University of Minnesota
-- Adam Tahir
+- Adam Tahir, ACL alumni
 - Michael Szmuk, now at Amazon Prime Air
 - Nazli Demirer, now at Halliburton
 - Daniel Dueri, now at SpaceX
@@ -200,11 +206,11 @@ Master alumni:
 
 - Oliver Sheridan, now at Blue Origin
 - Aman Tiwary, PhD student at University of New Mexico
-- Yoshihide Arai
+- Yoshihide Arai, ACL alumni
 - Cole Morgan, now at SpaceX
-- Andrew W. Berning
-- Timothy V. Lowery
-- Can Pehlivanturk
+- Andrew W. Berning, ACL alumni
+- Timothy V. Lowery, ACL alumni
+- Can Pehlivanturk, ACL alumni
 - Mo Zhao, now at Apex
 
 Profile page pattern:
@@ -232,6 +238,24 @@ Ziad Ramadan profile page:
 - Ziad is a PhD student interested in guidance and trajectory generation for large scale applications.
 - Research interests: Guidance and trajectory generation for large scale applications.
 - LinkedIn
+
+Fabio Spada profile page:
+
+- Fabio Spada
+- Current PhD Student
+- PhD Student
+- Fabio is a PhD student specializing in robust control and bilevel optimization. He holds an M.S. in Space Engineering from Milan and has internship and working experience at Rocket Lab, the German Aerospace Center, and Indra.
+- Research interests: Robust control and bilevel optimization.
+- GitHub
+- Google Scholar
+- LinkedIn
+
+Volk Thienpreecha profile page:
+
+- Volk Thienpreecha
+- Undergraduate Researcher
+- Volk is an undergraduate researcher interested in trajectory optimization for robotic manipulation.
+- Research interests: Real-time trajectory optimization for robotic manipulation.
 
 Project page media notes:
 

@@ -841,7 +841,52 @@ figure.result img.project-result-image {
 }
 
 .people-roster-current {
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.alumni-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 2.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.alumni-list li {
+  min-width: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.alumni-list-item {
+  display: grid;
+  gap: 0.2rem;
+  min-height: 4.75rem;
+  padding: 1rem 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.alumni-list-name {
+  font-family: var(--font-ui);
+  font-weight: 800;
+  color: var(--berkeley-blue);
+  line-height: 1.25;
+}
+
+.alumni-list-destination {
+  max-width: 32ch;
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.alumni-list-item:hover .alumni-list-name,
+.alumni-list-item:focus-visible .alumni-list-name {
+  color: var(--founders-rock);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
 }
 
 .profile-card {
@@ -1142,6 +1187,14 @@ figure.result img.project-result-image {
 
   .profile-layout {
     grid-template-columns: 1fr;
+  }
+
+  .alumni-list {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+
+  .people-roster-current {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
 
   .software-item {
