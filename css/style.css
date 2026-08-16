@@ -985,7 +985,7 @@ figure.result img.project-result-image {
 
 .pi-card {
   display: grid;
-  grid-template-columns: 19rem minmax(0, 1fr);
+  grid-template-columns: 23rem minmax(0, 1fr);
   gap: 2.75rem;
   align-items: center;
   padding: 2.25rem 0;
@@ -1004,7 +1004,7 @@ figure.result img.project-result-image {
 }
 
 .pi-media {
-  width: 19rem;
+  width: 23rem;
   aspect-ratio: 1;
   border-radius: 0.9rem;
 }
@@ -1258,7 +1258,8 @@ figure.result img.project-result-image {
 
   .pi-media,
   .profile-hero-media {
-    width: 12rem;
+    width: 100%;
+    max-width: 22rem;
   }
 
   .project-facts li {
