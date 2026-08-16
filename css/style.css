@@ -834,10 +834,9 @@ figure.result img.project-result-image {
 /* People */
 .people-roster {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 0 2.5rem;
-  margin-top: 1.5rem;
-  border-top: 1px solid var(--line);
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: 2rem;
+  margin-top: 1.75rem;
 }
 
 .people-roster-current {
@@ -890,14 +889,21 @@ figure.result img.project-result-image {
 }
 
 .profile-card {
-  display: grid;
-  grid-template-columns: 5rem minmax(0, 1fr);
-  gap: 1rem;
-  align-items: center;
-  padding: 1.15rem 0;
-  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  overflow: hidden;
+  background: var(--panel);
   color: var(--ink);
   text-decoration: none;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.profile-card:hover,
+.profile-card:focus-visible {
+  box-shadow: 0 0.6rem 1.4rem rgba(0, 33, 72, 0.14);
+  transform: translateY(-0.15rem);
 }
 
 .profile-card:hover .profile-card-name,
@@ -916,9 +922,8 @@ figure.result img.project-result-image {
 }
 
 .profile-card-media {
-  width: 5rem;
+  width: 100%;
   aspect-ratio: 1;
-  border-radius: 0.65rem;
 }
 
 .profile-photo {
@@ -946,6 +951,10 @@ figure.result img.project-result-image {
   gap: 0.2rem;
 }
 
+.profile-card-body {
+  padding: 1rem 1.1rem 1.25rem;
+}
+
 .profile-card-name,
 .pi-name {
   font-family: var(--font-ui);
@@ -954,27 +963,32 @@ figure.result img.project-result-image {
   line-height: 1.25;
 }
 
-.profile-card-meta,
-.pi-card .role {
+.profile-card-meta {
   font-family: var(--font-ui);
   font-size: 0.86rem;
   color: var(--ink-soft);
   line-height: 1.35;
 }
 
-.profile-card-note,
-.pi-summary {
+.profile-card-note {
   font-size: 0.98rem;
   color: var(--ink);
   line-height: 1.45;
 }
 
+.pi-summary {
+  font-size: 1.15rem;
+  color: var(--ink);
+  line-height: 1.55;
+  max-width: 46ch;
+}
+
 .pi-card {
   display: grid;
-  grid-template-columns: 8rem minmax(0, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: 19rem minmax(0, 1fr);
+  gap: 2.75rem;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 2.25rem 0;
   margin-top: 1.5rem;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -990,13 +1004,27 @@ figure.result img.project-result-image {
 }
 
 .pi-media {
-  width: 8rem;
+  width: 19rem;
   aspect-ratio: 1;
-  border-radius: 0.75rem;
+  border-radius: 0.9rem;
+}
+
+.pi-titles {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0.55rem 0 0.9rem;
+}
+
+.pi-titles span {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
 }
 
 .pi-name {
-  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+  font-size: clamp(1.75rem, 3vw, 2.6rem);
 }
 
 .people-grid {
@@ -1063,16 +1091,30 @@ figure.result img.project-result-image {
 
 .profile-hero-grid {
   display: grid;
-  grid-template-columns: 10rem minmax(18rem, 30rem);
-  gap: 1.75rem;
+  grid-template-columns: 13rem minmax(18rem, 30rem);
+  gap: 2rem;
   align-items: center;
   justify-content: center;
 }
 
 .profile-hero-media {
-  width: 10rem;
+  width: 13rem;
   aspect-ratio: 1;
   border-radius: 0.8rem;
+}
+
+.profile-hero-titles {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0.4rem 0 0;
+}
+
+.profile-hero-titles span {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
 }
 
 .profile-hero h1 {
@@ -1207,7 +1249,6 @@ figure.result img.project-result-image {
 }
 
 @media (max-width: 36rem) {
-  .profile-card,
   .pi-card,
   .profile-hero-grid {
     grid-template-columns: 1fr;
@@ -1215,10 +1256,9 @@ figure.result img.project-result-image {
     text-align: center;
   }
 
-  .profile-card-media,
   .pi-media,
   .profile-hero-media {
-    width: 7rem;
+    width: 12rem;
   }
 
   .project-facts li {
