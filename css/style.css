@@ -839,10 +839,6 @@ figure.result img.project-result-image {
   margin-top: 1.75rem;
 }
 
-.people-roster-current {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .alumni-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1232,10 +1228,6 @@ figure.result img.project-result-image {
   }
 
   .alumni-list {
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  }
-
-  .people-roster-current {
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
 
